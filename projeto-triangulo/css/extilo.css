@@ -1,0 +1,24 @@
+.container{
+	text-align: center;
+	background-color: #000;
+	padding-bottom: 20px;
+}
+.jumbotron{
+	width: 500px;
+	margin: 0 auto;
+}
+.title h2{
+	color: #FFF;
+}
+.close-window{
+	float: right;
+}
+.modal-footer{
+	text-align: center;
+}
+.modal-footer button{
+	padding-left: 35px;
+	padding-right: 35px;
+	border-radius: 10px;
+	font-size: 18px;
+}

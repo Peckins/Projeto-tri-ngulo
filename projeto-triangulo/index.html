@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!--Página de estilização.-->
+	<link rel="stylesheet" type="text/css" href="css/extilo.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!--script das funções de cálculo.-->
+	<script src="js/calculos.js"></script>
+</head>
+<body>
+	<!--Início do container.-->
+	<div class="container">
+
+		<!--Título da página.-->
+		<div class="row title">
+			<div class="col-md-12">
+				<h2>
+					Calculo de triângulos
+				</h2>
+			</div>
+		</div>
+		<!--Fim do título.-->
+
+		<!--Caixa com botão para abrir a janela de cálculos.-->
+		<div class="jumbotron">
+
+			<!--Subtítulo da página.-->
+			<div class="row">
+				<div class="col-md-12">
+					<h4 class="subtitle">
+						Verifique diferentes tipo de trângulos
+					</h4>
+				</div>
+			</div>
+			<!--Fim do subtítulo.-->
+
+			<!--Botão para abrir a janela de cálculos.-->
+			<div class="row botom">
+				<div class="col-md-12">
+					<a data-toggle="modal" data-target="#calcularTriangulo">
+						<button type="button" class="btn btn-success">
+							Começar
+						</button>
+					</a>
+				</div>
+			</div>
+			<!--Fim do botão.-->
+
+		</div>
+		<!--Fim da caixa.-->
+
+	</div>
+	<!--Fim do container.-->
+
+	<!--Janela de verificação.-->
+	<div id="calcularTriangulo" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			
+			<!--Corpo da janela.-->
+			<div class="modal-content">
+				
+				<!--Cabeçalho da janela.-->
+				<div class="modal-header">
+
+					<!--Botão para fechar a janela.-->
+					<a href="#" data-dismiss="modal" class="close-window">
+						<span class="glyphicon glyphicon-remove"></span>
+					</a>
+
+					<!--Título da janela.-->
+					<h4 class="modal-title">
+						Verificar triângulo
+					</h4>
+				</div>
+				<!--Fim do título.-->
+
+				<!--Corpo da janela modal.-->
+				<div class="modal-body">
+
+					<!--Formulário de preenchimento para verificar.-->
+					<form class="form-group">
+						<label>Lado A:</label><br>
+						<input type="text" class="form-control" value="" id="lado1" name="lado1" placeholder="Digite o primeiro lado..." required="">
+						<label>Lado B:</label><br>
+						<input type="text" class="form-control" value="" id="lado2" name="lado2" placeholder="Digite o segundo lado..." required="">
+						<label>Lado C</label><br>
+						<input type="text" class="form-control" value="" id="lado3" name="lado3" placeholder="Digite o último lado..." required="">
+					</form>
+					<!--Fim do formulário.-->
+
+				</div>
+				<!--Fim do corpo da janela modal.-->
+
+				<!--Rodapé da janela.-->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" onclick="calcularTriangulo()">
+						Calcular
+					</button>
+				</div>
+				<!--Fim do rodapé.-->
+
+			</div>
+			<!--Fim do corpo da janela.-->
+
+		</div>
+	</div>
+	<!--Fim da janela.-->
+</body>
+</html>
